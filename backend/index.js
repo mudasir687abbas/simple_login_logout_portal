@@ -24,3 +24,5 @@ app.use((req,res)=>{
  app.listen(5000,async ()=>{
     console.log('Server is running on 5000')
  })
+
+export default app;
