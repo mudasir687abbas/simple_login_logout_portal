@@ -7,7 +7,7 @@ import { middlewareError } from './middleware/middlewareError.js';
 const app = express();
 
 
-// app.use(cors({ origin: 'http://localhost:5173'}));
+app.use(cors({ origin: 'https://simple-login-logout-portal.vercel.app/'}));
 app.use(express.json());
 
 
