@@ -14,6 +14,7 @@ app.use(express.json());
 app.use('/api/auth',middlewareCheckDB,register);
 
 app.get('/',(req,res)=>{
+    if(!connectDB) return res.json({msg:'DB connection failed});
     res.json({msg:"Server is running on port#5000"});
  });
  
