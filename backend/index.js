@@ -15,7 +15,7 @@ app.use('/api/auth',middlewareCheckDB,register);
 
 app.get('/',(req,res)=>{
     
-    res.json({msg:"Server is running on port#5000",(db:(connectDB()) ? "Connected":"NOt connected")});
+    res.json({msg:"Server is running on port#5000"});
  });
  
 app.use(middlewareError);
