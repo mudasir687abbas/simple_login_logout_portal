@@ -11,12 +11,15 @@ const Register=({toggleForm})=>{
   const submitForm = (e)=>{
       e.preventDefault();
       let isRegisterd = register(formData);
-      if(isRegisterd){
+      if(isRegisterd.success){
         alert("You are registerd.Now you can login");
         setFormData({name:'',email:'',password:''});
         toggleForm(true);
 
+      }else{
+        alert(isRegisterd.msg);
       }
+        
 
     }
 
