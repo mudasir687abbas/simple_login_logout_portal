@@ -17,7 +17,7 @@ const Register=({toggleForm})=>{
         toggleForm(true);
 
       }else{
-        alert(isRegisterd.msg);
+        alert(JSON.stringfy(isRegistered));
       }
         
 
