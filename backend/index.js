@@ -6,8 +6,9 @@ import { middlewareCheckDB } from './middleware/checkDB.js';
 import { middlewareError } from './middleware/middlewareError.js';
 const app = express();
 
-
-//app.use(cors({ origin: 'https://simple-login-logout-portal-fontend.vercel.app/'}));
+app.use(cors({ 
+    origin: 'https://simple-login-logout-portal-fontend.vercel.app/',
+    credentials:true}));
 app.use(express.json());
 
 
